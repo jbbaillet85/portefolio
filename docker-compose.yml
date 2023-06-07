@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+    postgres:
+        container_name: portefolio_postgres_container_65287
+        image: postgres:15
+        working_dir: /app
+        restart: always
+        ports:
+            - "65287:5432"
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: postgres
+            POSTGRES_DB: postgres
+        volumes:
+            - "postgres_portefolio_65287:/var/lib/postgresql"
+
+volumes:
+    postgres_portefolio_65287:
