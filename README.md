@@ -1,3 +1,5 @@
+[![wakatime](https://wakatime.com/badge/user/648b0556-0c0e-4e9d-b952-2bea950dabe6/project/92a9cd61-f530-4875-ba3e-2a1e222b85cd.svg)](https://wakatime.com/badge/user/648b0556-0c0e-4e9d-b952-2bea950dabe6/project/92a9cd61-f530-4875-ba3e-2a1e222b85cd)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/7d8e8c6f6e264b8688dae88328f21224)](https://app.codacy.com/gh/jbbaillet85/portefolio/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 # portefolio
 
 application django de présentation de portefolio de développeur
