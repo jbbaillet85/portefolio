@@ -18,9 +18,9 @@ urlpatterns = [
         name="home",
     ),
     path('accounts/', include('allauth.urls')),
-    path("pages", include("portefolio.pages.urls")),
-    path("users/", include("portefolio.users.urls")),
-    path("Portefolio/", include("Portefolio.urls")),
+    path("pages", include("apps.pages.urls")),
+    path("users/", include("apps.users.urls")),
+    path("portefolio/", include("apps.portefolio.urls")),
 ]
 
 if settings.DEBUG:

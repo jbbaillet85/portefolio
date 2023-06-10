@@ -12,3 +12,13 @@ DEBUG_TOOLBAR_CONFIG = {
     "SHOW_TEMPLATE_CONTEXT": True,
 }
 INTERNAL_IPS = ["127.0.0.1"]
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'portefolio',
+        'USER': 'portefolio',
+        'PASSWORD': 'portefolio',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}

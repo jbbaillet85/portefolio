@@ -1,4 +1,4 @@
-from models import Portefolio
+from apps.portefolio.models import Portefolio
 from django import forms
 
 
