@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Mon profil{% endblock title %}
+
+{% block content %}
+  <div class="container">
+    <h1>Mon profil</h1>
+    
+    <h2>Mes informations</h2>
+    <form method="post">
+      {% csrf_token %}
+      {{ user_form|crispy }}
+      <button type="submit" class="btn btn-primary">Enregistrer</button>
+    </form>
+    
+    <h2>Mes projets</h2>
+    {% if projects %}
+      <ul>
+        {% for project in projects %}
+          <li><a href="{% url 'apps.portefolio:project_detail' project.pk %}">{{ project.name }}</a></li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>Aucun projet trouvé.</p>
+    {% endif %}
+    
+    <a href="{% url 'apps.portefolio:project_create' %}" class="btn btn-primary">Créer un nouveau projet</a>
+  </div>
+{% endblock content %}
